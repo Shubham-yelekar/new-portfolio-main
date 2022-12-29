@@ -8,6 +8,45 @@
   <title>New-portfolio-main</title>
 </head>
 <body>
-  <h1>Hello World</h1>
+
+  <!-- the Orbital -->
+  <div class="orbit">
+    <canvas id="canvas" width="900" height="900"></canvas>
+  </div>
+
+  <!-- lines -->
+  <div class="lines">
+    <img src="./assets/bg/inner lines.png" alt="">
+  </div>
+
+  <!-- Star BG -->
+  <div class="star-bg">
+    <img src="./assets/bg/star-bg.png" alt="">
+  </div>
+
+  <!-- grainy BG-->
+  <div class="grain">
+    <img src="./assets/bg/graintexture@2x.png" alt="">
+  </div>
+
+  <!-- blobs -->
+  <div class="blobs blob-1">
+    <img src="./assets/bg/blob-blue-light.png" alt="">
+  </div>
+  <!-- blobs -->
+
+  <div class="heading">
+    <h1>Hello World</h1>
+  </div>
+  
+
+  <script src="https://unpkg.com/@rive-app/canvas@1.0.79"></script>
+  <script>
+    new rive.Rive({
+        src: "../assets/bg/orbit.riv",
+        canvas: document.getElementById("canvas"),
+        autoplay: true
+    });
+</script>
 </body>
 </html>

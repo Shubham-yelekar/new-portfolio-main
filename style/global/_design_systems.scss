@@ -8,8 +8,28 @@ $ff-200 : 200;
 $red: red;
 
 
+body::-webkit-scrollbar {
+    width: 1rem;
+  }
+   
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(31, 31, 31);
+    outline: 1px solid rgba(112, 128, 144, 0.534);
+  }
+
+
+body {
+    background-color: #141414;
+    color: #fff;
+}
+
 
 h1 {
     font-family: $ff-family;
-    font-weight: $ff-200;
+    font-weight: $ff-400;
+    font-size: 8rem;
 }
