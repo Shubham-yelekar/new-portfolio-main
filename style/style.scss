@@ -9,6 +9,20 @@
 
 // Background
 
+// Custom Classes
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
 .blobs {
     position: absolute;
     z-index: -1;
@@ -60,11 +74,43 @@
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    padding: 3rem 0.5rem ;
-
+    padding: 6rem 2rem ;
+    
     h1 {
         text-transform:uppercase;
         line-height: 100%;
         font-size: 5.7rem;
     }
+}
+
+main {
+
+    width: 92%;
+    margin: 0 auto;
+
+    .intro {
+       
+       gap: 5rem;
+
+       p {
+        margin-top: 2rem;
+
+       }
+
+       .socials {
+        margin-top: 3rem;
+        padding: 0px 1rem;
+        width: 100%;
+        justify-content: space-between;
+
+        .social-icon {
+            width: 24px;
+
+        }
+
+       }
+
+
+    }
+
 }

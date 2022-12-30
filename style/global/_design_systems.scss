@@ -6,6 +6,8 @@ $ff-400 : 400;
 $ff-200 : 200;
 
 $red: red;
+$white:hsla(0, 0%, 100%, 1);
+$textGrey: hsla(218, 12%, 87%, 1);
 
 
 body::-webkit-scrollbar {
@@ -24,8 +26,9 @@ body::-webkit-scrollbar {
 
 body {
     background-color: #141414;
-    color: #fff;
+    color: $white;
     overflow-x: hidden;
+    font-family: $ff-family ;
 }
 
 
@@ -33,4 +36,34 @@ h1 {
     font-family: $ff-family;
     font-weight: $ff-400;
     font-size: 8rem;
+}
+
+h5 {
+  font-family: 'Satoshi Variable';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+/* identical to box height, or 22px */
+
+text-transform: capitalize;
+}
+
+p{
+  font-family: 'Satoshi Variable';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 200%;
+
+
+color: $textGrey;
+}
+
+span {
+  color: white;
+}
+
+a {
+  cursor: pointer;
 }

@@ -16,6 +16,10 @@
 
 html, body {
   height: 100%;
+}
+
+html {
+  /* 62.5% of 16px browser font size is 10px */
   font-size: 62.5%;
 }
 
@@ -56,14 +60,52 @@ body::-webkit-scrollbar-thumb {
 
 body {
   background-color: #141414;
-  color: #fff;
+  color: hsl(0deg, 0%, 100%);
   overflow-x: hidden;
+  font-family: "Satoshi-Variable";
 }
 
 h1 {
   font-family: "Satoshi-Variable";
   font-weight: 400;
   font-size: 8rem;
+}
+
+h5 {
+  font-family: "Satoshi Variable";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  /* identical to box height, or 22px */
+  text-transform: capitalize;
+}
+
+p {
+  font-family: "Satoshi Variable";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: hsl(218deg, 12%, 87%);
+}
+
+span {
+  color: white;
+}
+
+a {
+  cursor: pointer;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
 }
 
 .blobs {
@@ -115,10 +157,30 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  padding: 3rem 0.5rem;
+  padding: 6rem 2rem;
 }
 .heading h1 {
   text-transform: uppercase;
   line-height: 100%;
   font-size: 5.7rem;
+}
+
+main {
+  width: 92%;
+  margin: 0 auto;
+}
+main .intro {
+  gap: 5rem;
+}
+main .intro p {
+  margin-top: 2rem;
+}
+main .intro .socials {
+  margin-top: 3rem;
+  padding: 0px 1rem;
+  width: 100%;
+  justify-content: space-between;
+}
+main .intro .socials .social-icon {
+  width: 24px;
 }/*# sourceMappingURL=style.css.map */

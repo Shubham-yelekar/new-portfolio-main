@@ -16,6 +16,10 @@
 
 html, body {
   height: 100%;
+}
+
+html {
+  /* 62.5% of 16px browser font size is 10px */
   font-size: 62.5%;
 }
 
@@ -56,12 +60,40 @@ body::-webkit-scrollbar-thumb {
 
 body {
   background-color: #141414;
-  color: #fff;
+  color: hsl(0deg, 0%, 100%);
   overflow-x: hidden;
+  font-family: "Satoshi-Variable";
 }
 
 h1 {
   font-family: "Satoshi-Variable";
   font-weight: 400;
   font-size: 8rem;
+}
+
+h5 {
+  font-family: "Satoshi Variable";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  /* identical to box height, or 22px */
+  text-transform: capitalize;
+}
+
+p {
+  font-family: "Satoshi Variable";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: hsl(218deg, 12%, 87%);
+}
+
+span {
+  color: white;
+}
+
+a {
+  cursor: pointer;
 }/*# sourceMappingURL=index.css.map */
