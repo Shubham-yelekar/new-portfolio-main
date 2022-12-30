@@ -57,6 +57,7 @@ body::-webkit-scrollbar-thumb {
 body {
   background-color: #141414;
   color: #fff;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -107,4 +108,17 @@ h1 {
   top: -120px;
   right: -450px;
   z-index: 5;
+  height: 50vh;
+}
+
+.heading {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 3rem 0.5rem;
+}
+.heading h1 {
+  text-transform: uppercase;
+  line-height: 100%;
+  font-size: 5.7rem;
 }/*# sourceMappingURL=style.css.map */
