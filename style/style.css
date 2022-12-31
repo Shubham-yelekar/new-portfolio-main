@@ -96,7 +96,7 @@ span {
 
 a {
   position: relative;
-  z-index: 1;
+  z-index: 12;
   transition: all 0.3s ease-in-out;
 }
 
@@ -137,7 +137,7 @@ a:hover {
      object-fit: cover;
   opacity: 0.8;
   mix-blend-mode: multiply;
-  z-index: 1;
+  z-index: 0;
 }
 
 .lines {
