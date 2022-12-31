@@ -52,19 +52,20 @@
 .lines {
     position: absolute;
     height: 100%;
-    z-index: 1;
+    z-index: 0;
+    // display: none;
 }
 
 .star-bg {
     position: absolute;
-    z-index: 0;
+    z-index: -1;
 }
 
 .orbit {
     position: absolute;
     top: -120px;
     right: -450px;
-    z-index: 5;
+    z-index: 2;
     height: 50vh;
 }
 
@@ -105,9 +106,13 @@ main {
 
         .social-icon {
             width: 24px;
-
+            opacity: 1;
+            cursor: pointer;
         }
 
+        
+
+    
        }
 
 

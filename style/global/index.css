@@ -95,5 +95,11 @@ span {
 }
 
 a {
-  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+  opacity: 0.8;
 }/*# sourceMappingURL=index.css.map */
