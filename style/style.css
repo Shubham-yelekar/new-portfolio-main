@@ -65,7 +65,6 @@ body::-webkit-scrollbar-thumb {
 body {
   background-color: #141414;
   color: hsl(0deg, 0%, 100%);
-  overflow-x: hidden;
   font-family: "Satoshi-Variable";
 }
 
@@ -157,15 +156,11 @@ a:hover {
 
 .star-bg {
   position: absolute;
-  z-index: -1;
+  z-index: 1;
 }
 
-.orbit {
-  position: absolute;
-  top: -120px;
-  right: -450px;
-  z-index: 2;
-  height: 50vh;
+body {
+  overflow-x: hidden;
 }
 
 .heading {
@@ -173,16 +168,23 @@ a:hover {
   flex-wrap: wrap;
   gap: 2rem;
   width: 96%;
-  padding: 4rem 2rem;
+  margin: 0 auto;
+  position: relative;
 }
 .heading h1 {
   text-transform: uppercase;
   line-height: 100%;
 }
+.heading .orbit {
+  position: absolute;
+  top: -120px;
+  right: -450px;
+  z-index: 2;
+}
 
 main {
   width: 92%;
-  margin: 0 auto;
+  margin: 5rem auto;
 }
 main .intro {
   display: flex;
@@ -214,6 +216,11 @@ main .intro .socials .social-icon {
 }
 
 @media screen and (min-width: 768px) {
+  .heading .orbit {
+    transform: translateY(-50%);
+    top: 0;
+    right: 0;
+  }
   main {
     width: 92%;
   }

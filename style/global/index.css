@@ -65,7 +65,6 @@ body::-webkit-scrollbar-thumb {
 body {
   background-color: #141414;
   color: hsl(0deg, 0%, 100%);
-  overflow-x: hidden;
   font-family: "Satoshi-Variable";
 }
 

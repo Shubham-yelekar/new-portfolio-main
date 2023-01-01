@@ -11,6 +11,8 @@
 
 // Custom Classes
 
+
+
 .flex-col{
     display: flex;
 }
@@ -62,37 +64,45 @@
 
 .star-bg {
     position: absolute;
-    z-index: -1;
+    z-index: 1;
 }
 
-.orbit {
-    position: absolute;
-    top: -120px;
-    right: -450px;
-    z-index: 2;
-    height: 50vh;
-}
+
 
 // Background
+
+body {
+    overflow-x: hidden;
+}
 
 .heading {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
     width: 96%;
-    padding: 4rem 2rem ;
+    margin: 0 auto;
+    position: relative;
+    // padding: 4rem 2rem ;
     
     h1 {
         text-transform:uppercase;
         line-height: 100%;
 
     }
+
+    .orbit {
+        position: absolute;
+        top: -120px;
+        right: -450px;
+        z-index: 2;
+        
+    }
 }
 
 main {
 
     width: 92%;
-    margin: 0 auto;
+    margin: 5rem auto;
 
     .intro {
        display: flex;
@@ -138,6 +148,16 @@ main {
 
 @media screen and (min-width:768px) {
    
+    .heading {
+
+        .orbit {
+            // margin: 0 auto;
+            transform: translateY(-50%);
+            top: 0;
+            right: 0;
+        }
+    }
+
    main { 
     width: 92%;
 
@@ -150,9 +170,7 @@ main {
             
         }
         .socials {
-            
             justify-content: flex-start;
-            
             gap: 5rem;
         }
     }
@@ -165,6 +183,8 @@ main {
 
 @media screen and (min-width:1024px) {
    
+    
+
     main {
      width: 49%;
  
