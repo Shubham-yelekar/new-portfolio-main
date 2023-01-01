@@ -172,7 +172,8 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  padding: 6rem 2rem;
+  width: 96%;
+  padding: 4rem 2rem;
 }
 .heading h1 {
   text-transform: uppercase;
@@ -185,7 +186,7 @@ main {
 }
 main .intro {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
@@ -204,7 +205,7 @@ main .intro .connect {
   gap: 3rem;
 }
 main .intro .socials {
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 main .intro .socials .social-icon {
   width: 24px;
@@ -219,9 +220,13 @@ main .intro .socials .social-icon {
   main .intro {
     flex-direction: row-reverse;
   }
+  main .intro .connect {
+    width: 80%;
+    max-width: 440px;
+  }
   main .intro .socials {
     justify-content: flex-start;
-    gap: clamp(3rem, 6vw + 1rem, 6rem);
+    gap: 5rem;
   }
 }
 @media screen and (min-width: 1024px) {

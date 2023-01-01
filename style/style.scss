@@ -79,7 +79,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    padding: 6rem 2rem ;
+    width: 96%;
+    padding: 4rem 2rem ;
     
     h1 {
         text-transform:uppercase;
@@ -95,7 +96,7 @@ main {
 
     .intro {
        display: flex;
-       gap: 1rem;
+       gap: 2rem;
        flex-direction: column;
         align-items: flex-start;
         justify-content: space-between;
@@ -111,6 +112,7 @@ main {
        .connect {
         
         width: 100%;
+        
         display: flex;
         flex-grow: 1;
         flex-direction: column;
@@ -118,8 +120,7 @@ main {
        }
 
        .socials {
-        justify-content: space-evenly;
-
+        justify-content: space-between;
 
         .social-icon {
             width: 24px;
@@ -143,9 +144,16 @@ main {
     .intro {
         flex-direction: row-reverse;
         
+        .connect {
+            width: 80%;
+            max-width: 440px;
+            
+        }
         .socials {
+            
             justify-content: flex-start;
-            gap: clamp(3rem, 6vw + 1rem, 6rem);
+            
+            gap: 5rem;
         }
     }
 
