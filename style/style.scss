@@ -11,6 +11,10 @@
 
 // Custom Classes
 
+.flex-col{
+    display: flex;
+}
+
 .flex-col {
     display: flex;
     flex-direction: column;
@@ -74,13 +78,13 @@
 .heading {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 2rem;
     padding: 6rem 2rem ;
     
     h1 {
         text-transform:uppercase;
         line-height: 100%;
-        font-size: 5.7rem;
+
     }
 }
 
@@ -90,27 +94,38 @@ main {
     margin: 0 auto;
 
     .intro {
-       
-       gap: 5rem;
-
+       display: flex;
+       gap: 1rem;
+       flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
        p {
-        margin-top: 2rem;
+        margin-bottom: 2rem;
+        
+       }
 
+       .intro-text {
+        flex-grow: 1;
+       }
+
+       .connect {
+        
+        width: 100%;
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        gap: 3rem;
        }
 
        .socials {
-        margin-top: 3rem;
-        padding: 0px 1rem;
-        width: 100%;
-        justify-content: space-between;
+        justify-content: space-evenly;
+
 
         .social-icon {
             width: 24px;
             opacity: 1;
             cursor: pointer;
         }
-
-        
 
     
        }
@@ -119,3 +134,35 @@ main {
     }
 
 }
+
+@media screen and (min-width:768px) {
+   
+   main { 
+    width: 92%;
+
+    .intro {
+        flex-direction: row-reverse;
+        
+        .socials {
+            justify-content: flex-start;
+            gap: clamp(3rem, 6vw + 1rem, 6rem);
+        }
+    }
+
+    
+   }
+    
+}
+
+
+@media screen and (min-width:1024px) {
+   
+    main {
+     width: 49%;
+ 
+     .intro {
+         flex-direction: row-reverse;
+     }
+    }
+     
+ }

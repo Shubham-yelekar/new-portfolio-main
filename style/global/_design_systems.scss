@@ -23,6 +23,9 @@ body::-webkit-scrollbar {
     outline: 1px solid rgba(112, 128, 144, 0.534);
   }
 
+:root {
+  --fs-xl: clamp(8rem, 12vw + 1rem, 23rem);
+}
 
 body {
     background-color: #141414;
@@ -32,10 +35,11 @@ body {
 }
 
 
+
 h1 {
     font-family: $ff-family;
     font-weight: $ff-400;
-    font-size: 8rem;
+    font-size: var(--fs-xl) ;
 }
 
 h5 {
@@ -61,7 +65,8 @@ color: $textGrey;
 }
 
 span {
-  color: white;
+  font-weight: 500;
+  color: $white;
 }
 
 a {
