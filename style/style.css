@@ -74,6 +74,29 @@ h1 {
   font-size: var(--fs-xl);
 }
 
+h2 {
+  font-size: clamp(3.6rem, 6vh + 1rem, 7.2rem);
+  line-height: 110%;
+}
+
+h3 {
+  font-family: "Satoshi Variable";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 4.7rem;
+  line-height: 47px;
+  margin: 1rem 0;
+  background: linear-gradient(103.97deg, rgba(241, 234, 233, 0.69) 0.98%, rgba(241, 234, 233, 0) 106.31%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -text-fill-color: transparent;
+}
+
+h4 {
+  font-size: 3.6rem;
+}
+
 h5 {
   font-family: "Satoshi Variable";
   font-style: normal;
@@ -170,6 +193,7 @@ body {
   width: 96%;
   margin: 0 auto;
   position: relative;
+  padding: 4rem 0rem;
 }
 .heading h1 {
   text-transform: uppercase;
@@ -187,11 +211,9 @@ main {
   margin: 5rem auto;
 }
 main .intro {
-  display: flex;
-  gap: 2rem;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
+  display: grid;
+  grid-template-rows: 1fr;
+  gap: 4rem 0px;
 }
 main .intro p {
   margin-bottom: 2rem;
@@ -214,6 +236,48 @@ main .intro .socials .social-icon {
   opacity: 1;
   cursor: pointer;
 }
+main .gap {
+  height: 20rem;
+}
+main .work .work__intro {
+  display: grid;
+  grid-template-rows: 1fr;
+  gap: 3rem 0px;
+}
+main .work .work__intro .work__intro_title {
+  width: 100%;
+  flex-grow: 1;
+}
+main .work .work__intro .work__intro__text p {
+  margin-bottom: 2rem;
+}
+main .work .project_right {
+  display: grid;
+  grid-template-rows: 1fr;
+  gap: 2rem 0px;
+  grid-auto-flow: row;
+  margin-bottom: 5rem;
+}
+main .work .project_description {
+  padding: 1rem;
+}
+main .work .project__image {
+  aspect-ratio: 5/4;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .work .left {
+  order: 1;
+}
+main .work .right {
+  order: 2;
+}
+main .work .more-projects {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 3rem 0px;
+}
 
 @media screen and (min-width: 768px) {
   .heading .orbit {
@@ -225,15 +289,58 @@ main .intro .socials .social-icon {
     width: 92%;
   }
   main .intro {
-    flex-direction: row-reverse;
+    grid-template-columns: 1fr 1fr;
+    gap: 0rem 0px;
   }
   main .intro .connect {
     width: 80%;
     max-width: 440px;
+    order: 1;
   }
-  main .intro .socials {
+  main .intro .connect .socials {
     justify-content: flex-start;
     gap: 5rem;
+  }
+  main .intro .intro-text {
+    order: 2;
+  }
+  main .work .work__intro {
+    grid-template-columns: 1fr 1fr;
+    gap: 0rem 0px;
+  }
+  main .work .work__intro .work__intro__text {
+    flex-grow: 1;
+  }
+  main .work .work__intro .work__intro_title {
+    width: 100%;
+    max-width: 440px;
+    flex-grow: 1;
+  }
+  main .work .project_right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 0;
+    grid-auto-flow: row;
+    align-items: center;
+    margin-bottom: 0rem;
+  }
+  main .work .project_right .project_thumb {
+    order: 2;
+  }
+  main .work .project_right .project__image {
+    aspect-ratio: 4/5;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .work .project_right .project_description {
+    max-width: 50ch;
+    padding: 0;
+  }
+  main .work .project_right .left {
+    order: 1;
+  }
+  main .work .project_right .right {
+    order: 2;
   }
 }
 @media screen and (min-width: 1024px) {

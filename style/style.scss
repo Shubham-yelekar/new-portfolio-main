@@ -1,5 +1,14 @@
 @forward 'global';
 
+$ease_out: cubic-bezier(0.165, 0.84, 0.44, 1);
+
+@mixin transition() {
+    transition: 700ms $ease_out;
+
+    &:hover{
+        transition: 400ms $ease_out;
+    }
+}
 
 
 // body {
@@ -10,6 +19,7 @@
 // Background
 
 // Custom Classes
+
 
 
 
@@ -82,7 +92,8 @@ body {
     width: 96%;
     margin: 0 auto;
     position: relative;
-    // padding: 4rem 2rem ;
+    padding: 4rem 0rem ;
+
     
     h1 {
         text-transform:uppercase;
@@ -104,12 +115,13 @@ main {
     width: 92%;
     margin: 5rem auto;
 
+    //----------- INTRO SECTION ----------------
     .intro {
-       display: flex;
-       gap: 2rem;
-       flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-between;
+       display: grid;
+        grid-template-rows: 1fr;
+        gap: 4rem 0px ;
+
+
        p {
         margin-bottom: 2rem;
         
@@ -136,15 +148,78 @@ main {
             width: 24px;
             opacity: 1;
             cursor: pointer;
-        }
-
-    
+        }  
        }
-
-
     }
 
+ //----------- WORK SECTION ----------------
+
+    .gap {
+       height: 20rem; 
+    }
+
+    .work {
+
+            .work__intro {
+                
+                display: grid;
+                grid-template-rows: 1fr;
+                gap: 3rem 0px;
+
+                .work__intro_title {
+                    width: 100%;
+                    flex-grow: 1;
+                }
+
+                .work__intro__text {
+
+                    p {
+                        margin-bottom: 2rem;
+                    }
+                }
+            }
+
+            .project_right {
+                display: grid;
+                grid-template-rows: 1fr;
+                gap: 2rem 0px;
+                grid-auto-flow: row;
+                margin-bottom: 5rem ;
+            }
+
+            .project_description {
+                padding: 1rem;
+            }
+
+            .project__image {
+                aspect-ratio: 5/4;
+                object-fit: cover;
+            }
+
+            .left {
+                order: 1;
+            }
+
+            .right {
+                order: 2;
+            }
+            
+            .more-projects {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                padding: 3rem 0px;
+            }
+
+            
+            
+        }
+
+            
 }
+
+
+
 
 @media screen and (min-width:768px) {
    
@@ -162,17 +237,76 @@ main {
     width: 92%;
 
     .intro {
-        flex-direction: row-reverse;
+        grid-template-columns: 1fr 1fr;
+        gap: 0rem 0px ;
         
         .connect {
             width: 80%;
             max-width: 440px;
+            order: 1;
+
+            .socials {
+                justify-content: flex-start;
+                gap: 5rem;
+            }
             
         }
-        .socials {
-            justify-content: flex-start;
-            gap: 5rem;
+
+        .intro-text {
+            order: 2;
         }
+        
+
+    }
+
+    .work {
+
+        .work__intro {
+            grid-template-columns: 1fr 1fr;
+            gap: 0rem 0px;
+
+            .work__intro__text{
+                flex-grow: 1;
+            }
+
+            .work__intro_title {
+                width: 100%;
+                max-width: 440px;
+                flex-grow: 1;
+            }
+        }
+
+        .project_right {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0 0;
+            grid-auto-flow: row;
+            align-items: center;
+            margin-bottom: 0rem ;
+
+            .project_thumb {
+                order: 2;
+            }
+
+            .project__image {
+                aspect-ratio: 4/5;
+                object-fit: cover;
+            }
+
+            .project_description {
+                max-width: 50ch;
+                padding: 0;
+            }
+
+            .left {
+                order: 1;
+            }
+
+            .right {
+                order: 2;
+            }
+        }
+
     }
 
     
