@@ -87,6 +87,7 @@ body {
   color: hsl(0deg, 0%, 100%);
   font-family: "Satoshi-Variable";
   position: relative;
+  height: 100vh;
 }
 
 h1 {
@@ -146,7 +147,7 @@ a {
   position: relative;
   overflow: hidden;
   z-index: 12;
-  filter: brightness(80%);
+  filter: brightness(100%);
   transform: scale(1);
   transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
@@ -154,5 +155,5 @@ a {
 a:hover {
   opacity: 0.8;
   transform: scale(0.98);
-  filter: brightness(100%);
+  filter: brightness(90%);
 }/*# sourceMappingURL=index.css.map */

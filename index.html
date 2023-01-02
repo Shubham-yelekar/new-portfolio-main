@@ -120,7 +120,7 @@
           <div class="project_description left" >
             <h4>Merch Website</h4>
             <p>Also have a strong background in web design and UI/UX design, and I am committed to creating visually stunning websites</p>
-            <a href="#" class="fancy-btn" >Visit</a>
+            
           </div>
         </article>
 
@@ -229,14 +229,38 @@
 
  
   
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <script src="https://unpkg.com/@rive-app/canvas@1.0.79"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js" integrity="sha512-A64Nik4Ql7/W/PJk2RNOmVyC/Chobn5TY08CiKEX50Sdw+33WTOpPJ/63bfWPl0hxiRv1trPs5prKO8CpA7VNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
   <script>
     new rive.Rive({
         src: "../assets/bg/orbit.riv",
         canvas: document.getElementById("canvas"),
         autoplay: true
     });
+
+const tl= gsap.timeline();
+
+
+
+
+tl.from('.heading h1 ', {
+  y:100,
+  opacity:0,
+  skewY:5,
+  duration:3,
+  ease: "expo.out",
+}).from(".intro div ", {
+  y:100,
+  opacity:0,
+  duration: 3,
+  ease: "expo.out",
+}, "-=1")
+
+
 </script>
 </body>
 </html>

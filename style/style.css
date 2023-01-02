@@ -87,6 +87,7 @@ body {
   color: hsl(0deg, 0%, 100%);
   font-family: "Satoshi-Variable";
   position: relative;
+  height: 100vh;
 }
 
 h1 {
@@ -146,7 +147,7 @@ a {
   position: relative;
   overflow: hidden;
   z-index: 12;
-  filter: brightness(80%);
+  filter: brightness(100%);
   transform: scale(1);
   transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
@@ -154,7 +155,7 @@ a {
 a:hover {
   opacity: 0.8;
   transform: scale(0.98);
-  filter: brightness(100%);
+  filter: brightness(90%);
 }
 
 .flex-col {
@@ -240,6 +241,7 @@ a:hover {
   margin: 0 auto;
   position: relative;
   padding: 4rem 0rem;
+  opacity: 1;
 }
 .heading h1 {
   text-transform: uppercase;
@@ -287,6 +289,7 @@ main .gap {
 }
 main .work {
   position: relative;
+  opacity: 1;
 }
 main .work .art-1 {
   width: 100%;
@@ -302,6 +305,7 @@ main .work .work__intro {
   display: grid;
   grid-template-rows: 1fr;
   gap: 3rem 0px;
+  opacity: 1;
 }
 main .work .work__intro .work__intro_title {
   width: 100%;
@@ -324,6 +328,9 @@ main .work .project_description {
   border-style: solid;
   -o-border-image: linear-gradient(to bottom, rgba(0, 0, 139, 0), rgba(255, 255, 255, 0.4431372549)) 1;
      border-image: linear-gradient(to bottom, rgba(0, 0, 139, 0), rgba(255, 255, 255, 0.4431372549)) 1;
+}
+main .work .project_description p {
+  margin: 2rem 0;
 }
 main .work .project__image {
   aspect-ratio: 5/4;
