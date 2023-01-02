@@ -1,14 +1,6 @@
 @forward 'global';
 
-$ease_out: cubic-bezier(0.165, 0.84, 0.44, 1);
 
-@mixin transition() {
-    transition: 700ms $ease_out;
-
-    &:hover{
-        transition: 400ms $ease_out;
-    }
-}
 
 
 // body {
@@ -208,13 +200,81 @@ main {
                 display: flex;
                 align-items: center;
                 justify-content: flex-end;
-                padding: 3rem 0px;
-            }
+                
 
-            
-            
+                .underline-btn {
+                    display: inline-block;
+                    padding: 1em 0;
+                    border-radius: 0;
+                    color: #b2876f;
+                    margin-top:2rem;
+                    font-weight: 700;
+                    font-size: 1.6rem;
+                    // letter-spacing: 2px;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    position: relative;
+
+                    background: linear-gradient(90deg, rgba(184, 43, 250, 0.96) -8.54%, rgba(92, 229, 72, 0.96) 90.45%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    -text-fill-color: transparent;
+
+
+                    &:before,
+                    &:after{
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        height: 2px;
+                        width: 0;
+
+	                }
+
+                    &:before{
+                        transition: width 0s ease,background .4s ease;
+                        left: 0;
+                        right: 0;
+                        bottom: 6px;
+                    }
+
+                    &:after{
+                        right: 2.2%;
+                        bottom: 6px;
+                        transition: width .4s ease;
+                    }
+
+                    &:hover{
+                        &:before{
+                            width: 97.8%;
+                            background: linear-gradient(90deg, rgba(184, 43, 250, 0.96) -8.54%, rgba(72, 184, 229, 0.96) 90.45%);
+                            transition: width .4s ease;
+                        }
+                        &:after{
+                            width: 97.8%;
+                            background: 0 0;
+                            transition: all 0s ease;
+                        }
+                    }
+                    
+                }
+            }       
         }
 
+        .quote {
+
+            h6 {
+                font-family: 'Satoshi Variable';
+            font-style: italic;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 140%;
+            width: 40ch;
+            margin: 10rem auto;
+            color: #D9E5E1;
+            }
+        }
             
 }
 

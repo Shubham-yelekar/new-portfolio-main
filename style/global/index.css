@@ -123,10 +123,15 @@ span {
 
 a {
   position: relative;
+  overflow: hidden;
   z-index: 12;
-  transition: all 0.3s ease-in-out;
+  filter: brightness(80%);
+  transform: scale(1);
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 a:hover {
   opacity: 0.8;
+  transform: scale(0.98);
+  filter: brightness(100%);
 }/*# sourceMappingURL=index.css.map */
