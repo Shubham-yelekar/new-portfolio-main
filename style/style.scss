@@ -11,7 +11,10 @@
 // Background
 
 // Custom Classes
-
+body {
+    overflow-x: relative;
+    width: 100vw;
+}
 
 
 
@@ -96,9 +99,6 @@
 
 // Background
 
-body {
-    overflow-x: hidden;
-}
 
 .heading {
     display: flex;
@@ -126,6 +126,8 @@ body {
 }
 
 main {
+
+    
 
     width: 92%;
     margin: 5rem auto;
@@ -226,6 +228,13 @@ main {
 
             .project_description {
                 padding: 1rem;
+
+                border-width: 1px;
+                border-style: solid;
+                border-image: linear-gradient(to bottom, rgba(0, 0, 139, 0), #ffffff71) 1;
+
+                
+                
             }
 
             .project__image {

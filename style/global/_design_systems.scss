@@ -67,6 +67,11 @@ body::-webkit-scrollbar {
   --fs-xl: clamp(8rem, 12vw + 1rem, 23rem);
 }
 
+html,body {
+  overflow-x: hidden;
+  width: 100vw;
+}
+
 body {
     background-color: #141414;
     color: $white; 
