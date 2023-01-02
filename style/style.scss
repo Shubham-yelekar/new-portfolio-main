@@ -34,15 +34,38 @@
 .blobs {
     position: absolute;
     z-index: -1;
-    filter: blur(200px);
+    filter: blur(240px);
     mix-blend-mode:normal;
 }
 
-.blobs {
-    top: -80px;
-    left: -500px;
+.blobs-1 {
+    top: 0px;
+    left: -200px;
     width: 600px;
+}
 
+.blobs-2 {
+    top: 1200px;
+    right: 400px;
+    width: 500px;
+}
+
+.blobs-3 {
+    top: 2400px;
+    left: 100px;
+    width: 500px;
+}
+
+.blobs-4 {
+    top: 3200px;
+    right: 400px;
+    width: 500px;
+}
+
+.blobs-5 {
+    top: 4400px;
+    left: 400px;
+    width: 500px;
 }
 
 .grain {
@@ -147,13 +170,35 @@ main {
  //----------- WORK SECTION ----------------
 
     .gap {
-       height: 20rem; 
+       height: 10rem; 
     }
 
     .work {
+        position: relative;
 
+        .art-1 {
+            
+            width: 100%;
+            -webkit-animation: rotating 50s linear infinite;
+            -moz-animation: rotating 50s linear infinite;
+            -ms-animation: rotating 50s linear infinite;
+            -o-animation: rotating 50s linear infinite;
+            animation: rotating 50s linear infinite;
+
+        }
+
+        .art-2 {
+            
+            width: 100%;
+            -webkit-animation: rotating 50s linear infinite;
+            -moz-animation: rotating 50s linear infinite;
+            -ms-animation: rotating 50s linear infinite;
+            -o-animation: rotating 50s linear infinite;
+            animation: rotating 50s linear infinite;
+
+        }
+            
             .work__intro {
-                
                 display: grid;
                 grid-template-rows: 1fr;
                 gap: 3rem 0px;
@@ -282,6 +327,17 @@ main {
 
 
 @media screen and (min-width:768px) {
+
+    .blobs-1 {
+        width: 1000px;
+    }
+
+    .blobs-2 {
+        top: 1400px;
+        right: 200px;
+        width: 700px;
+        opacity: 0.8;
+    }
    
     .heading {
 
@@ -295,6 +351,9 @@ main {
 
    main { 
     width: 92%;
+    .gap {
+        height: 20rem; 
+     }
 
     .intro {
         grid-template-columns: 1fr 1fr;
@@ -320,6 +379,16 @@ main {
     }
 
     .work {
+
+        .art-1 {
+            position: absolute;
+            left: -900px;
+        }
+
+        .art-2 {
+            position: absolute;
+            right: -900px;
+        }
 
         .work__intro {
             grid-template-columns: 1fr 1fr;

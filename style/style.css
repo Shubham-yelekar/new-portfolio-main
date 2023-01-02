@@ -45,6 +45,22 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 body::-webkit-scrollbar {
   width: 1rem;
 }
@@ -153,14 +169,38 @@ a:hover {
 .blobs {
   position: absolute;
   z-index: -1;
-  filter: blur(200px);
+  filter: blur(240px);
   mix-blend-mode: normal;
 }
 
-.blobs {
-  top: -80px;
-  left: -500px;
+.blobs-1 {
+  top: 0px;
+  left: -200px;
   width: 600px;
+}
+
+.blobs-2 {
+  top: 1200px;
+  right: 400px;
+  width: 500px;
+}
+
+.blobs-3 {
+  top: 2400px;
+  left: 100px;
+  width: 500px;
+}
+
+.blobs-4 {
+  top: 3200px;
+  right: 400px;
+  width: 500px;
+}
+
+.blobs-5 {
+  top: 4400px;
+  left: 400px;
+  width: 500px;
 }
 
 .grain {
@@ -242,7 +282,20 @@ main .intro .socials .social-icon {
   cursor: pointer;
 }
 main .gap {
-  height: 20rem;
+  height: 10rem;
+}
+main .work {
+  position: relative;
+}
+main .work .art-1 {
+  width: 100%;
+  -webkit-animation: rotating 50s linear infinite;
+  animation: rotating 50s linear infinite;
+}
+main .work .art-2 {
+  width: 100%;
+  -webkit-animation: rotating 50s linear infinite;
+  animation: rotating 50s linear infinite;
 }
 main .work .work__intro {
   display: grid;
@@ -339,6 +392,15 @@ main .quote h6 {
 }
 
 @media screen and (min-width: 768px) {
+  .blobs-1 {
+    width: 1000px;
+  }
+  .blobs-2 {
+    top: 1400px;
+    right: 200px;
+    width: 700px;
+    opacity: 0.8;
+  }
   .heading .orbit {
     transform: translateY(-50%);
     top: 0;
@@ -346,6 +408,9 @@ main .quote h6 {
   }
   main {
     width: 92%;
+  }
+  main .gap {
+    height: 20rem;
   }
   main .intro {
     grid-template-columns: 1fr 1fr;
@@ -362,6 +427,14 @@ main .quote h6 {
   }
   main .intro .intro-text {
     order: 2;
+  }
+  main .work .art-1 {
+    position: absolute;
+    left: -900px;
+  }
+  main .work .art-2 {
+    position: absolute;
+    right: -900px;
   }
   main .work .work__intro {
     grid-template-columns: 1fr 1fr;
