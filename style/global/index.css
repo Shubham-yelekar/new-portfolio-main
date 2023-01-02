@@ -80,13 +80,13 @@ body::-webkit-scrollbar-thumb {
 
 html, body {
   overflow-x: hidden;
-  width: 100vw;
 }
 
 body {
   background-color: #141414;
   color: hsl(0deg, 0%, 100%);
   font-family: "Satoshi-Variable";
+  position: relative;
 }
 
 h1 {

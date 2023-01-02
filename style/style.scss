@@ -11,10 +11,6 @@
 // Background
 
 // Custom Classes
-body {
-    overflow-x: relative;
-    width: 100vw;
-}
 
 
 
@@ -228,7 +224,7 @@ main {
 
             .project_description {
                 padding: 1rem;
-
+                width: 100%;
                 border-width: 1px;
                 border-style: solid;
                 border-image: linear-gradient(to bottom, rgba(0, 0, 139, 0), #ffffff71) 1;
@@ -434,6 +430,7 @@ main {
             .project_description {
                 max-width: 50ch;
                 padding: 0;
+                border-width: 0px;
             }
 
             .left {

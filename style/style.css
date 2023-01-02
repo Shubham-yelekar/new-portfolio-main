@@ -80,13 +80,13 @@ body::-webkit-scrollbar-thumb {
 
 html, body {
   overflow-x: hidden;
-  width: 100vw;
 }
 
 body {
   background-color: #141414;
   color: hsl(0deg, 0%, 100%);
   font-family: "Satoshi-Variable";
+  position: relative;
 }
 
 h1 {
@@ -155,11 +155,6 @@ a:hover {
   opacity: 0.8;
   transform: scale(0.98);
   filter: brightness(100%);
-}
-
-body {
-  overflow-x: relative;
-  width: 100vw;
 }
 
 .flex-col {
@@ -324,6 +319,7 @@ main .work .project_right {
 }
 main .work .project_description {
   padding: 1rem;
+  width: 100%;
   border-width: 1px;
   border-style: solid;
   -o-border-image: linear-gradient(to bottom, rgba(0, 0, 139, 0), rgba(255, 255, 255, 0.4431372549)) 1;
@@ -477,6 +473,7 @@ main .quote h6 {
   main .work .project_right .project_description {
     max-width: 50ch;
     padding: 0;
+    border-width: 0px;
   }
   main .work .project_right .left {
     order: 1;
