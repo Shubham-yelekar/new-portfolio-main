@@ -224,7 +224,8 @@ a:hover {
 
 .lines {
   position: absolute;
-  height: 100%;
+  height: 100vh;
+  width: 100%;
   z-index: 0;
 }
 
@@ -336,6 +337,7 @@ main .work .project__image {
   aspect-ratio: 5/4;
   -o-object-fit: cover;
      object-fit: cover;
+  transform: scale(1.1);
 }
 main .work .left {
   order: 1;
