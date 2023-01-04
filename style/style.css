@@ -290,7 +290,6 @@ main .gap {
 }
 main .work {
   position: relative;
-  opacity: 1;
 }
 main .work .art-1 {
   width: 100%;
@@ -306,7 +305,6 @@ main .work .work__intro {
   display: grid;
   grid-template-rows: 1fr;
   gap: 3rem 0px;
-  opacity: 1;
 }
 main .work .work__intro .work__intro_title {
   width: 100%;
