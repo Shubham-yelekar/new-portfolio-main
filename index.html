@@ -249,16 +249,18 @@ const tl= gsap.timeline();
 
 
 tl.from('.heading h1 ', {
-  y:100,
+  y:160,
   opacity:0,
-  skewY:5,
-  duration:3,
-  ease: "expo.out",
+  skewY:6,
+  duration:2,
+  stagger: 0.3,
+  ease: "Power4.easeInOut",
 }).from(".intro div ", {
   y:100,
   opacity:0,
   duration: 3,
-  ease: "expo.out",
+  stagger: 0.3,
+  ease: "Power4.easeInOut",
 }, "-=1")
 
 
