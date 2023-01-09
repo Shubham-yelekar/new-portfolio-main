@@ -24,6 +24,8 @@
     transition: all 1s cubic-bezier(0,.54,.32,1.01);
 }
 
+
+
 .active {
     opacity: 1;
     transform: translateX(0%);
@@ -250,13 +252,11 @@ main {
                 border-width: 1px;
                 border-style: solid;
                 border-image: linear-gradient(to bottom, rgba(0, 0, 139, 0), #ffffff71) 1;
-                
                 p {
                     margin: 2rem 0;
                 }
             }
 
-            
         
             .project__image {
                
@@ -265,8 +265,6 @@ main {
                 object-fit: cover;
                 transform: scale(1.1);
             }
-
-            
 
             .left {
                 order: 1;
@@ -459,7 +457,7 @@ main {
 
             .project_description {
                 max-width: 50ch;
-                padding: 0;
+                padding-left: 10px;
                 border-width: 0px;
             }
 

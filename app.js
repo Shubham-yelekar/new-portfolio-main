@@ -1,4 +1,4 @@
-const els = document.querySelectorAll('.fade-right, .fade-left');
+const els = document.querySelectorAll('.fade-right, .fade-left, .img-scale');
 console.log(els)
 const options = {
   root: null,

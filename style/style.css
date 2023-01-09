@@ -552,7 +552,7 @@ main .quote h6 {
   }
   main .work .project_right .project_description {
     max-width: 50ch;
-    padding: 0;
+    padding-left: 10px;
     border-width: 0px;
   }
   main .work .project_right .left {
