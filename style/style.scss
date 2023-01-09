@@ -12,6 +12,16 @@
 
 // Custom Classes
 
+.fade-left {
+    opacity: 0;
+    transform: translateX(-10%);
+    transition: all 2s cubic-bezier(0,.54,.32,1.01);
+}
+
+.active {
+    opacity: 1;
+    transform: translateX(0%);
+}
 
 
 .flex-col{
@@ -125,7 +135,9 @@
 
 main {
 
-    
+    .elements {
+        opacity: 1;
+    }
 
     width: 92%;
     margin: 5rem auto;
@@ -239,13 +251,16 @@ main {
             }
 
             
-            
-
+        
             .project__image {
+               
+
                 aspect-ratio: 5/4;
                 object-fit: cover;
                 transform: scale(1.1);
             }
+
+            
 
             .left {
                 order: 1;

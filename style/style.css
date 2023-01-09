@@ -210,6 +210,17 @@ a:hover {
   transform-origin: bottom left;
 }
 
+.fade-left {
+  opacity: 0;
+  transform: translateX(-10%);
+  transition: all 2s cubic-bezier(0, 0.54, 0.32, 1.01);
+}
+
+.active {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
 .flex-col {
   display: flex;
 }
@@ -310,6 +321,9 @@ a:hover {
 main {
   width: 92%;
   margin: 5rem auto;
+}
+main .elements {
+  opacity: 1;
 }
 main .intro {
   display: grid;
