@@ -1,9 +1,9 @@
-const els = document.querySelectorAll('.fade-left');
-
+const els = document.querySelectorAll('.fade-right, .fade-left');
+console.log(els)
 const options = {
   root: null,
   rootMargin: '0px',
-  threshold: 0.3
+  threshold: 0.2
 }
 
 const cb = (entries) => {

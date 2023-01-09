@@ -213,7 +213,13 @@ a:hover {
 .fade-left {
   opacity: 0;
   transform: translateX(-10%);
-  transition: all 2s cubic-bezier(0, 0.54, 0.32, 1.01);
+  transition: all 1s cubic-bezier(0, 0.54, 0.32, 1.01);
+}
+
+.fade-right {
+  opacity: 0;
+  transform: translateX(10%);
+  transition: all 1s cubic-bezier(0, 0.54, 0.32, 1.01);
 }
 
 .active {
