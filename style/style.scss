@@ -257,9 +257,9 @@ main {
             
             .more-projects {
                 display: flex;
-                align-items: center;
+                align-items: flex-start;
                 justify-content: flex-end;
-                
+                float: right;
 
                 .underline-btn {
                     display: inline-block;
