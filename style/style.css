@@ -244,6 +244,7 @@ a:hover {
 .blobs {
   position: absolute;
   z-index: -1;
+  opacity: 0.5;
   filter: blur(240px);
   mix-blend-mode: normal;
 }
@@ -546,7 +547,8 @@ main .quote h6 {
     order: 2;
   }
   main .work .project_right .project__image {
-    aspect-ratio: 4/5;
+    width: 100%;
+    aspect-ratio: 3/4;
     -o-object-fit: cover;
        object-fit: cover;
   }
