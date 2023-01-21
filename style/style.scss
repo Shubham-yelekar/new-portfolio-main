@@ -3,10 +3,10 @@
 
 
 
-// body {
-//     background-color: #141414;
-//     color: #fff;
-// }
+body {
+    background-color: #141414;
+    color: #fff;
+}
 
 // Background
 
@@ -86,21 +86,20 @@
     width: 500px;
 }
 
-.grain {
-    position: absolute;
-    left:0;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    opacity: .8;
-    mix-blend-mode: multiply;
-    z-index: 0;
-}
+// .grain {
+//     position: absolute;
+//     left:0;
+//     top: 0;
+//     width: 100%;
+//     height: 100vh;
+//     object-fit: cover;
+//     opacity: .8;
+//     mix-blend-mode: multiply;
+//     z-index: 0;
+// }
 
 .lines {
     position: absolute;
-    height: 100vh;
     width: 100%;
     z-index: 0;
     // display: none;
@@ -202,7 +201,7 @@ main {
         position: relative;
         
         .art-1 {
-            
+            display: none;
             width: 100%;
             -webkit-animation: rotating 50s linear infinite;
             -moz-animation: rotating 50s linear infinite;
@@ -213,7 +212,7 @@ main {
         }
 
         .art-2 {
-            
+            display: none;
             width: 100%;
             -webkit-animation: rotating 50s linear infinite;
             -moz-animation: rotating 50s linear infinite;
@@ -359,16 +358,18 @@ main {
 }
 
 .about-me {
-    border: 0.3px solid grey;
-    height: 1000px;
+    
+    height: 100px;
 }
 
 .marquee {
     position: relative;
     width: 100vw;
     max-width: 100%;
-    height: 200px;
+    height: 60px;
     overflow-x: hidden;
+    border-top: 0.3px solid #fff ;
+    border-bottom: 0.3px solid #fff;
   }
   
   .track {
@@ -449,11 +450,13 @@ main {
         .art-1 {
             position: absolute;
             left: -900px;
+            display: block;
         }
 
         .art-2 {
             position: absolute;
             right: -800px;
+            display: block;
         }
 
         .work__intro {
