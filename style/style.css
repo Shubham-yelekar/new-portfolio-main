@@ -246,6 +246,12 @@ body {
   flex-direction: row;
 }
 
+.more-projects {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+}
+
 .blobs {
   position: absolute;
   z-index: -1;
@@ -408,57 +414,6 @@ main .work .left {
 }
 main .work .right {
   order: 2;
-}
-main .work .more-projects {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-end;
-  float: right;
-}
-main .work .more-projects .underline-btn {
-  display: inline-block;
-  padding: 1em 0;
-  border-radius: 0;
-  color: #b2876f;
-  margin-top: 2rem;
-  font-weight: 700;
-  font-size: 1.6rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  position: relative;
-  background: linear-gradient(90deg, rgba(184, 43, 250, 0.96) -8.54%, rgba(92, 229, 72, 0.96) 90.45%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  -text-fill-color: transparent;
-}
-main .work .more-projects .underline-btn:before, main .work .more-projects .underline-btn:after {
-  content: "";
-  display: block;
-  position: absolute;
-  height: 2px;
-  width: 0;
-}
-main .work .more-projects .underline-btn:before {
-  transition: width 0s ease, background 0.4s ease;
-  left: 0;
-  right: 0;
-  bottom: 6px;
-}
-main .work .more-projects .underline-btn:after {
-  right: 2.2%;
-  bottom: 6px;
-  transition: width 0.4s ease;
-}
-main .work .more-projects .underline-btn:hover:before {
-  width: 97.8%;
-  background: linear-gradient(90deg, rgba(184, 43, 250, 0.96) -8.54%, rgba(72, 184, 229, 0.96) 90.45%);
-  transition: width 0.4s ease;
-}
-main .work .more-projects .underline-btn:hover:after {
-  width: 97.8%;
-  background: 0 0;
-  transition: all 0s ease;
 }
 main .quote h6 {
   font-family: "Satoshi Variable";
