@@ -488,7 +488,7 @@ main .quote h6 {
     width: 92%;
   }
   main .gap {
-    height: 24rem;
+    height: 20rem;
   }
   main .intro {
     grid-template-columns: 1fr 1fr;
