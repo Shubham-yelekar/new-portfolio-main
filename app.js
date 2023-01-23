@@ -21,3 +21,6 @@ let observer = new IntersectionObserver(cb, options);
 els.forEach(el => {
   observer.observe(el);
 });
+
+
+
