@@ -167,8 +167,8 @@ a:hover {
 
 .menu {
   position: fixed;
-  right: 5vw;
-  bottom: 2vw;
+  right: 10vw;
+  bottom: 4vw;
   border: none;
   font-size: 1.6rem;
   padding: 1rem;
@@ -179,9 +179,60 @@ a:hover {
   background-color: #DADDE2;
   transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
   cursor: pointer;
+  transform: translate(0px);
 }
 
 .menu:hover {
   background-color: #fff;
-  transform: scale(1.2);
+  transform: scale(1.1);
+  color: black;
+}
+
+.menu-pressed {
+  background-color: transparent;
+  color: white;
+}
+
+.menu-wrapper {
+  opacity: 0;
+  transform: translateY(5px);
+  position: fixed;
+  right: 10vw;
+  bottom: 18vh;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2rem;
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.menu-wrapper span {
+  font-family: "Satoshi Variable";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.6rem;
+  line-height: 3.6rem;
+  color: #F1EAE9;
+  text-transform: capitalize;
+}
+.menu-wrapper li {
+  list-style: none;
+}
+.menu-wrapper li a {
+  font-size: 2.1rem;
+  color: rgba(189, 238, 221, 0.95);
+  text-transform: capitalize;
+  font-weight: 300;
+  line-height: 120%;
+}
+
+.clicked {
+  background-color: transparent;
+  border: 1px solid #F1EAE9;
+  color: #F1EAE9;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0px);
 }/*# sourceMappingURL=index.css.map */

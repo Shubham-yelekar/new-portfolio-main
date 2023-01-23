@@ -1,5 +1,5 @@
 const els = document.querySelectorAll('.fade-right, .fade-left, .img-scale');
-console.log(els)
+
 const options = {
   root: null,
   rootMargin: '0px',
@@ -23,4 +23,20 @@ els.forEach(el => {
 });
 
 
+const menuButton = document.querySelector('.menu');
+const menuWrapper = document.getElementById('menu_wrapper')
+
+menuButton.addEventListener("click", function(){
+  
+  menuButton.classList.toggle('clicked')
+
+  if(menuButton.classList.contains('clicked')){
+  
+    menuButton.innerText = 'Close'
+  } else {
+   
+    menuButton.innerText = 'Menu'
+  }
+  menuWrapper.classList.toggle('show')
+})
 

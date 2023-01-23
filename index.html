@@ -9,8 +9,24 @@
   <title>New-portfolio-main</title>
 </head>
 <body>
-
+  <button class="menu " style="opacity: 1;">
+    Menu
+  </button>
  
+  <div id="menu_wrapper" class="menu-wrapper">
+    <li>
+      <a href="./index.html"><span>Portfolio</span></a>
+    </li>
+    <li>
+      <a  href="./projects.html">Projects</a>
+    </li>
+    <li>
+      <a  href="#">About Me</a>
+    </li>
+    <li>
+      <a  href="#">Contact</a>
+    </li>
+  </div>
 
   <!-- lines -->
   <div class="lines">
@@ -50,7 +66,7 @@
 
   <header class="heading">
      <!-- the Orbital -->
-  <div class="orbit">
+  <div class="orbit" >
     <canvas id="canvas" width="900" height="900"></canvas>
   </div>
     <h1>Front-End</h1>
@@ -139,7 +155,7 @@
 
 
         <div class="more-projects">
-          <a class="link-btn" href="./more-projects.html">More Projects</a>
+          <a class="link-btn" href="./projects.html">More Projects</a>
         </div>
 
         <div class="art-1 absolute-art" >
@@ -186,7 +202,7 @@
         </article>
 
         <div class="more-projects">
-          <a class="link-btn" href="./more-projects.html">More Projects</a>
+          <a class="link-btn" href="./projects.html">More Projects</a>
         </div>
         
       </section>
@@ -227,7 +243,7 @@
           </a>
         </article>
         <div class="more-projects">
-          <a class="link-btn" href="./more-projects.html">More Projects</a>
+          <a class="link-btn" href="./projects.html">More Projects</a>
         </div>
         
         
@@ -286,10 +302,14 @@
     opacity:0,
     duration: 1.5,
     ease: "Power4.easeInOut",
+  }).from('.menu',{
+    opacity:0,
+    duration: 1.5,
+    ease: "Power4.easeInOut",
   }).from(".intro div ", {
     y:100,
     opacity:0,
-    duration: 1,
+    duration: 1.1,
     ease: "Power4.easeInOut",
   }, "-=1")
 
