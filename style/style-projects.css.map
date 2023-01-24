@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"style-projects.css"}
+{"version":3,"sources":["style-projects.scss","style-projects.css"],"names":[],"mappings":"AAAA;EACI,WAAA;EACA,aAAA;EACA,sBAAA;EACA,SAAA;EAED,UAAA;EACC,iBAAA;ACAJ;ADII;EACI,gBAAA;EACA,aAAA;EACA,sBAAA;EACA,SAAA;ACFR;ADGQ;EACI,iBAAA;ACDZ;ADGY;EACI,cAAA;EACA,gBAAA;ACDhB;ADOQ;EACI,WAAA;ACLZ;ADUQ;EACI,kBAAA;EACA,gBAAA;EACA,eAAA;EACA,iBAAA;EACA,uCAAA;UAAA,+BAAA;EACA,cAAA;EACA,kBAAA;ACRZ;;ADaA;EAEI;IACI,mBAAA;IACA,eAAA;IACA,6BAAA;ECXN;AACF","file":"style-projects.css"}
