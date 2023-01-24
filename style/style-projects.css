@@ -7,7 +7,7 @@
   margin: 5rem auto;
 }
 .project-row .project-tile {
-  max-width: 333px;
+  max-width: 352px;
   display: flex;
   flex-direction: column;
   gap: 1rem;

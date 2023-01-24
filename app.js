@@ -23,8 +23,10 @@ els.forEach(el => {
 });
 
 
+
 const menuButton = document.querySelector('.menu');
 const menuWrapper = document.getElementById('menu_wrapper')
+
 
 menuButton.addEventListener("click", function(){
   
