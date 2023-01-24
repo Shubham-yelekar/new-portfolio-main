@@ -174,7 +174,6 @@ a:hover {
   padding: 1rem;
   width: 60px;
   height: 60px;
-  border-radius: 50px;
   z-index: 1000;
   background-color: #DADDE2;
   transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
@@ -204,6 +203,9 @@ a:hover {
   flex-direction: column;
   align-items: flex-end;
   gap: 2rem;
+  padding: 28px 24px;
+  background: linear-gradient(144.72deg, rgba(0, 0, 0, 0) 1.25%, #000000 60%);
+  border: 0.3px solid rgba(98, 98, 98, 0.3882352941);
   transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
 }
 .menu-wrapper span {
@@ -228,7 +230,7 @@ a:hover {
 
 .clicked {
   background-color: transparent;
-  border: 1px solid #F1EAE9;
+  border: 0.3px solid rgba(98, 98, 98, 0.3882352941);
   color: #F1EAE9;
 }
 
