@@ -5,7 +5,7 @@
     gap: 4rem;
 
    width: 92%;
-    margin: 5rem auto;
+    margin: 4rem auto;
 
     
     
@@ -28,6 +28,7 @@
     .project-image-wrapper {
         img {
             width: 100%;
+            object-fit: cover;
         }
     }
 
@@ -49,6 +50,7 @@
     .project-row {
         flex-direction: row;
         flex-wrap: wrap;
+        margin: 8rem auto;
         justify-content: space-around;
     }
 

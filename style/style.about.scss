@@ -23,9 +23,11 @@ body {
 .profile-img{
     
     height: 280px;
-    background-image: url('../assets/bg/IMG_5828-edited.webp');
+    
+    background-image: url('../assets/bg/profile.webp');
     background-position: center;
     background-size: cover;
+    filter: brightness(0.8);
     
 }
   

@@ -4,7 +4,7 @@
   flex-direction: column;
   gap: 4rem;
   width: 92%;
-  margin: 5rem auto;
+  margin: 4rem auto;
 }
 .project-row .project-tile {
   max-width: 352px;
@@ -21,6 +21,8 @@
 }
 .project-row .project-image-wrapper img {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .project-row .project-links a {
   font-style: normal;
@@ -37,6 +39,7 @@
   .project-row {
     flex-direction: row;
     flex-wrap: wrap;
+    margin: 8rem auto;
     justify-content: space-around;
   }
 }/*# sourceMappingURL=style-projects.css.map */
