@@ -5,7 +5,7 @@ body {
 .about-rows {
   display: grid;
   grid-template-rows: 1fr;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .details {
@@ -29,9 +29,7 @@ body {
   }
   .about-rows {
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 2rem;
-  }
-  .details {
-    padding-left: 2rem;
+    margin-bottom: 4rem;
+    gap: 2rem;
   }
 }/*# sourceMappingURL=style.about.css.map */
