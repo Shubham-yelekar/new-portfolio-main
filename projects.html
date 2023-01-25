@@ -197,11 +197,22 @@
       
     </div>
 
- 
+  <script src="./assets/gsap.min.js"></script>
+
   <script src="./app.js"></script>
  
 <script>
  
+ const tl= gsap.timeline();
+
+  tl.from('.project-tile', {
+    y:160,
+    opacity:0,
+    skewY:5,
+    duration:1.5,
+    stagger: 0.3,
+    ease: "Power4.easeInOut",
+  }, '-=1')
 
 </script>
 </body>

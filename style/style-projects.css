@@ -5,6 +5,7 @@
   gap: 4rem;
   width: 92%;
   margin: 4rem auto;
+  opacity: 1;
 }
 .project-row .project-tile {
   max-width: 352px;

@@ -33,4 +33,7 @@ body {
     margin-bottom: 4rem;
     gap: 2rem;
   }
+  .details {
+    gap: 0rem;
+  }
 }/*# sourceMappingURL=style.about.css.map */
