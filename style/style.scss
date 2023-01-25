@@ -305,7 +305,7 @@ main {
 
 .about-me {
     
-    height: 100px;
+    margin: 8rem auto;
 }
 
 .marquee {
@@ -315,13 +315,16 @@ main {
     height: 60px;
     overflow-x: hidden;
     border-top: 0.3px solid #fff ;
+    
     border-bottom: 0.3px solid #fff;
   }
   
   .track {
+    
     position: absolute;
     white-space: nowrap;
     will-change: transform;
+    
     animation: marquee 32s linear infinite;
 
     h6 {
