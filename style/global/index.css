@@ -247,7 +247,7 @@ a:hover {
   text-transform: uppercase;
   color: #FDFDFD;
   width: 200px;
-  padding: 2rem 1rem;
+  padding: 1.4rem 2rem;
   cursor: pointer;
   border: 0.3px solid rgba(98, 98, 98, 0.3882352941);
   transition: all 0.3s ease;
