@@ -148,12 +148,13 @@ a {
   transform: scale(1);
   transition: all 0.3s $ease_out;
   text-decoration: none;
+
 }
 
 a:hover {
   opacity: 0.8;
   transform: scale(0.98);
-  filter: brightness(90%);
+    filter: brightness(90%);
 }
 
 .link-btn {
