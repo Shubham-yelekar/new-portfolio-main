@@ -31,7 +31,10 @@ body {
   .about-rows {
     grid-template-columns: 1fr 1fr;
     margin-bottom: 4rem;
-    gap: 2rem;
+    gap: 0rem;
+  }
+  .padding-left {
+    padding-left: 1.5rem;
   }
   .details {
     gap: 0rem;
